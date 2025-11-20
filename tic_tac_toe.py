@@ -1,3 +1,5 @@
+import random
+
 def tabla_sor(minta):
     print(minta*10)
 def tabla_oszlop(minta):
@@ -25,3 +27,19 @@ def kiir():
 # **********
 # *  *  *  *
 # **********
+
+
+
+
+
+
+
+def geplepes():
+    vszam = random.randint(0,2)
+    hszam = random.randint(0,2)
+
+
+
+    lepes = str(vszam) + str(hszam)
+    print(lepes)
+geplepes()
