@@ -3,6 +3,7 @@ import random
 vegevan=0
 lista=["","","","","","","","",""]
 
+lista=["","","","","","","","",""]
 def tabla_sor(minta):
         print(minta*10)
 def tabla_oszlop(minta,lista1, lista2, lista3):
@@ -25,12 +26,14 @@ while vegevan==0:
 
 
 
-# def geplepes():
-#     vszam = random.randint(0,2)
-#     hszam = random.randint(0,2)
+def geplepes(lista):
+    sor = random.randint(0,2)
+    oszlop = random.randint(0,2)
+    
+    i = sor * 3 + oszlop
+    lista.insert(i, "O")
+    lista.pop(i+1)
+    
+    print(lista)
 
-
-
-#     lepes = str(vszam) + str(hszam)
-#     print(lepes)
-# geplepes()
+geplepes(lista)
