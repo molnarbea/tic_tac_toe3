@@ -17,23 +17,22 @@ def kiir(lista):
         tabla_oszlop("*",lista[6],lista[7],lista[8])
         tabla_sor("*")
 
-while vegevan==0:
-       kiir(lista)
-       vegevan+=1
-
-    
-
-
-
 
 def geplepes(lista):
     sor = random.randint(0,2)
     oszlop = random.randint(0,2)
     
     i = sor * 3 + oszlop
-    lista.insert(i, "O")
-    lista.pop(i+1)
+    while lista[i]!="":
+        sor = random.randint(0,2)
+        oszlop = random.randint(0,2)
+        i = sor * 3 + oszlop
     
-    print(lista)
-
-geplepes(lista)
+    lista[i]="O"
+    
+    
+while vegevan==0:
+       kiir(lista)
+       geplepes(lista)
+       kiir(lista)
+       vegevan+=1
