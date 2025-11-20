@@ -1,14 +1,16 @@
+
+lista=["o","x","x","","","","","",""]
 def tabla_sor(minta):
     print(minta*10)
-def tabla_oszlop(minta):
-    print(f"{minta}{minta:>{3}}{minta:>{3}}{minta:>{3}}")
+def tabla_oszlop(minta,lista1, lista2, lista3):
+    print(f"{minta}{lista1:>{1}}{minta:>{2}}{lista2:>{1}}{minta:>{2}}{lista3:>{1}}{minta:>{2}}")
 def kiir():
     tabla_sor("*")
-    tabla_oszlop("*")
+    tabla_oszlop("*",lista[0],lista[1],lista[2])
     tabla_sor("*")
-    tabla_oszlop("*")
+    tabla_oszlop("*",lista[3],lista[4],lista[5])
     tabla_sor("*")
-    tabla_oszlop("*")
+    tabla_oszlop("*",lista[6],lista[7],lista[8])
     tabla_sor("*")
 
 
